@@ -3,10 +3,9 @@ on:
  workflow_dispatch: #allows manual trigger from github UI
 jobs:
  echo-steps:
-  runs-on: ubuntu-latest
-  steps:
-   -name: first step
-   run: echo "this is the first step"
-
-   -name: second step
-    run: echo "this is second step"
+   runs-on: ubuntu-latest
+   steps:
+    - name: first step
+      run: echo "this is the first step"
+    - name: second step
+      run: echo "this is the first step"
