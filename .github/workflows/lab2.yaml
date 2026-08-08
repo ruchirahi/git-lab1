@@ -2,6 +2,9 @@ name: Java Lab Workflow
 
 on:
  workflow_dispatch: # Allows manual trigger from GitHub UI
+ push:
+    branches:
+      - master
 
 jobs:
  build-and-run:
